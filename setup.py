@@ -26,5 +26,17 @@ setup(name=PACKAGE_DIR,
       url='https://github.com/gdoermann/fcc_complaints',
       packages=find_packages('src/'),
       include_package_data=True,
-      install_requires=required
+      install_requires=required,
+      scripts=['fcc_complaints/caller_id_report.py'],
+      classifiers=[
+          'Development Status :: 4 - Beta',
+          'Environment :: Web Environment',
+          'Intended Audience :: Developers',
+          'License :: OSI Approved :: MIT License',
+          'Operating System :: OS Independent',
+          'Programming Language :: Python',
+          'Programming Language :: Python :: 3',
+          'Programming Language :: Python :: 3.6',
+          'Topic :: Software Development :: Libraries :: Python Modules',
+      ],
       )

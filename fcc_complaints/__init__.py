@@ -2,7 +2,6 @@ import datetime
 import weakref
 
 import os
-import pandas as pd
 from sodapy import Socrata
 import phonenumbers
 
@@ -22,7 +21,6 @@ class ApiFilter(object):
             'issue_time': self._time,
             'caller_id_number': self._phone_number,
             'advertiser_business_phone_number': self._phone_number,
-
         }
         self._api = weakref.ref(api)
         self.filters = filters
