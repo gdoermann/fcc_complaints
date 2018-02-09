@@ -30,3 +30,11 @@ This is not required but allows you to not have to pass it in every time you ini
 
 
 # Usage
+
+```
+from fcc_complaints import FccApi
+api = FccApi()
+r = api.query(caller_id_number='0000000000')
+```
+
+The library will handling formatting of dates, phone numbers, etc. See the api documentation for more information on options.
