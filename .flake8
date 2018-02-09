@@ -1,0 +1,18 @@
+[flake8]
+exclude =
+    .git,
+    __pycache__,
+    old,
+    build,
+    dist,
+    templates,
+    */__init__.py,
+    */migrations/*,
+    manage.py,
+    */test-settings.py
+
+max-line-length = 120
+
+ignore =
+    W391,
+    W291
